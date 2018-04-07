@@ -10,7 +10,7 @@ import Beers from './Beers';
 class App extends Component {
   render() {
     return (
-      <Segment style={styles.background}>
+      <Segment>
         <NavBar />
         <Flash />
         <Switch>
@@ -23,10 +23,6 @@ class App extends Component {
   }
 }
 
-const styles = {
-  background: {
-    backgroundColor: 'black',
-  },
-}
+
 
 export default App;
