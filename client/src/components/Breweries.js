@@ -1,6 +1,8 @@
 import React from 'react';
 import { Header, Card } from 'semantic-ui-react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+
 
 class Breweries extends React.Component {
   state = {
@@ -26,6 +28,11 @@ class Breweries extends React.Component {
           <Card>
             <Card.Content>
               <Card.Header>{breweries.name}</Card.Header>
+            </Card.Content>
+            <Card.Content extra>
+              <Link to='/breweryview'>
+                View This Brewery
+              </Link>
             </Card.Content>
           </Card>
         )}
