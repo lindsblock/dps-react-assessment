@@ -6,6 +6,8 @@ import Home from './Home';
 import { Switch, Route } from 'react-router-dom';
 import { Segment } from 'semantic-ui-react';
 import Beers from './Beers';
+import Breweries from './Breweries';
+import BeerView from './BeerView';
 
 class App extends Component {
   render() {
@@ -16,6 +18,8 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/beers' component={Beers} />
+          <Route exact path='/breweries' component={Breweries} />
+          <Route exact path='/beerview' component={BeerView} />
           <Route component={NoMatch} />
         </Switch>
       </Segment>
